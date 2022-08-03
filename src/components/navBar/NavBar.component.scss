@@ -1,0 +1,211 @@
+@import "../scss/utils.scss";
+
+.header {
+  // background-color: red;
+  @include blurBackground;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // bottom: 0;
+  width: 100%;
+
+  nav {
+    // background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    transition: all 1s ease-in-out;
+
+    @include mobileResponsive {
+      justify-content: space-between;
+      padding: 0 5%;
+      transition: all 1s ease-in-out;
+    }
+
+    .companyLogo {
+      // background-color: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .rightLogo {
+        // background-color: red;
+        margin-right: 10px;
+        // animation: 0.7s linear 0s infinite logo;
+        animation: 0.7s alternate 0s infinite logo;
+        color: $iconColor;
+
+        @keyframes logo {
+          from {
+            // transform: rotate(0deg);
+            transform: scale(0.7);
+            // transform: rotate(-30deg);
+          }
+          to {
+            // transform: rotate(360deg);
+            transform: scale(1);
+            // transform: rotate(30deg);
+          }
+        }
+
+        // @keyframes logo2 {
+        //   from{
+        //     transform: scale(0.5);
+        //   }
+        //   to{
+        //     transform: scale(1);
+        //   }
+        // }
+      }
+
+      h1 {
+        font-family: "Nunito";
+        font-weight: map-get($fontWeight, extraBold);
+        color: whitesmoke;
+
+        span {
+          // background-color: white;
+          border-radius: 10px;
+          border: 1px solid white;
+          padding: 0 10px;
+          color: whitesmoke;
+        }
+      }
+    }
+
+    .linksContainer {
+      // background-color: aqua;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: all 2s ease-in-out;
+
+      ul {
+        // background-color: pink;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+
+        li {
+          // background-color: orange;
+
+          a {
+            text-decoration: none;
+            color: whitesmoke;
+
+            h4 {
+              margin: 0;
+              font-weight: map-get($fontWeight, bold);
+
+              &:hover {
+                border-bottom: 3px solid whitesmoke;
+                border-radius: 4px;
+              }
+            }
+
+            .active {
+              border-bottom: 3px solid whitesmoke;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+
+      @include mobileResponsive {
+        display: none;
+        transition: all 2s ease-in-out;
+      }
+    }
+
+    .menuToggler {
+      // background-color: red;
+      display: none;
+
+      @include mobileResponsive {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $iconColor;
+        cursor: pointer;
+        transition: all 0.7s ease-in-out;
+      }
+    }
+    .openMenu {
+      @include mobileResponsive {
+        transform: rotate(130deg);
+        transition: all 0.7s ease-in-out;
+      }
+    }
+  }
+
+  .menuContainer {
+    // background-color: red;
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    // @include blurBackground;
+    transition: all 0.7s ease-in-out;
+
+    ul {
+      // background-color: pink;
+      list-style: none;
+
+      li {
+        // background-color: orange;
+        width: fit-content;
+
+        a {
+          // background-color: red;
+          -webkit-tap-highlight-color: transparent;
+          text-decoration: none;
+          color: whitesmoke;
+
+          h4 {
+            // background-color: red;
+            // margin: 0;
+            font-weight: map-get($fontWeight, bold);
+            &:hover {
+              // border-bottom: 3px solid $iconColor;
+
+              &::before {
+                content: "";
+                width: 25px;
+                height: 3px;
+                margin-top: 9px;
+                background-color: $iconColor;
+                position: absolute;
+                left: 10px;
+              }
+            }
+          }
+
+          .active {
+            &::before {
+              content: "";
+              width: 25px;
+              height: 3px;
+              margin-top: 9px;
+              background-color: $iconColor;
+              position: absolute;
+              left: 10px;
+            }
+            // border-bottom: 3px solid $iconColor;
+            // border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+  .open {
+    @include mobileResponsive {
+      height: 100vh;
+      transition: all 0.7s ease-in-out;
+    }
+  }
+}

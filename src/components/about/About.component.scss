@@ -1,0 +1,123 @@
+@import "../scss/utils.scss";
+
+.aboutContainer {
+  // background-color: rgb(134, 158, 247);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 89vh;
+  @include mobileResponsive {
+    height: 95vh;
+  }
+  .aboutGym {
+    // background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mobileResponsive {
+      margin-top: 30%;
+    }
+    h1 {
+      margin: 0;
+      color: whitesmoke;
+      // @include mobileResponsive {
+      //   color: black;
+      // }
+    }
+    p {
+      color: whitesmoke;
+      text-align: center;
+      // @include mobileResponsive {
+      //   color: black;
+      // }
+    }
+  }
+  .buttonContainer {
+    // background-color: red;
+    text-align: center;
+  }
+  .connectionContainer {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-evenly;
+    .socialMediaContainer {
+      h3 {
+        color: whitesmoke;
+      }
+      .socialMedia {
+        // background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h5 {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          color: whitesmoke;
+        }
+      }
+    }
+    .linksContainer {
+      color: whitesmoke;
+      .links {
+        //   background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @include mobileResponsive {
+          flex-direction: column;
+        }
+        a {
+          h5 {
+            margin: 0;
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+    .SupportContainer {
+      color: whitesmoke;
+      .support {
+        // background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @include mobileResponsive {
+          flex-direction: column;
+        }
+
+        h5 {
+          margin: 0;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+  .copyRight {
+    // background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    p {
+      // background-color: green;
+      margin: 0;
+      margin-top: 10px;
+      display: flex;
+      // justify-content: ;
+      color: $iconColor;
+      align-items: center;
+      span {
+        margin-left: 10px;
+        background-color: green;
+        // color: white;
+        color: $iconColor;
+
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

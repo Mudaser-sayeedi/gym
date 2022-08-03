@@ -1,0 +1,28 @@
+// VARIABALES
+
+$primaryColor: rgb(255, 255, 255);
+$secondaryColor: black;
+$iconColor: rgb(183, 183, 183);
+$OrangeColor:#f36100;
+$fontWeight: (
+  extraLight: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semiBold: 600,
+  bold: 700,
+  extraBold: 800,
+  black: 900,
+);
+
+@mixin mobileResponsive {
+  @media screen and (max-width: 850px) {
+    @content;
+  }
+}
+
+@mixin blurBackground {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}

@@ -1,0 +1,21 @@
+@import "../scss/utils.scss";
+
+.button {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  // @include blurBackground;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: all 0.2s ease-in-out;
+
+  &:active {
+    transform: scale(0.8);
+    transition: all 0.2s ease-in-out;
+  }
+}

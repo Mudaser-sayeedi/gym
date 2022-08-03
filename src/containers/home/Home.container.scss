@@ -1,0 +1,186 @@
+@import "../../components/scss/utils.scss";
+
+.homeContainer {
+  box-sizing: border-box;
+  // background-color: black;
+  // color: white;
+  height: fit-content;
+
+  #home {
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .motivationQuote {
+      z-index: 1;
+      // background-color: red;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 1s ease-in-out;
+
+      h1 {
+        // background-color: green;
+        font-size: 32px;
+        color: $iconColor;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: map-get($fontWeight, regular);
+        @include blurBackground;
+        @include mobileResponsive {
+          font-size: 24px;
+        }
+        b {
+          // background-color: red;
+          border-radius: 10px;
+          padding: 5px;
+          color: rgba(255, 0, 0, 0.9);
+          color: rgba(255, 255, 0, 0.9);
+        }
+      }
+    }
+    .hide {
+      transform: scale(0);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .videoOverLay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  section {
+    // background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #why {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      // background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h6 {
+        // background-color: red;
+        margin: 0;
+        margin-bottom: 10px;
+        color: #f36100;
+        width: fit-content;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        // background-color: blue;
+        margin: 0;
+        color: white;
+        width: fit-content;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+    }
+    .features {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0 10px;
+
+      @include mobileResponsive {
+        // background-color: red;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+  #trainers {
+    // background-color: pink;
+    // background-color: rgb(217, 255, 250);
+    background-image: url("../../assets/images/craig-lovelidge-ndr4vtteVGw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .overlay {
+      background-color: rgba(255, 255, 255, 0);
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      backdrop-filter: blur(100px);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        text-transform: uppercase;
+        margin: 0;
+        color: $OrangeColor;
+      }
+      h1 {
+        text-transform: uppercase;
+        margin: 0;
+        color: white;
+      }
+      .trainer {
+        // background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // width: 100%;
+        @include mobileResponsive {
+          // flex-direction: column;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          // padding: 0 10px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  #contact {
+    background-color: blue;
+  }
+  #about {
+    // background-color: black;
+    background-image: url("../../assets/images/victor-freitas-hOuJYX2K5DA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 100;
+    overflow: hidden;
+    .overlay {
+      background-color: rgba(255, 255, 255, 0);
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      backdrop-filter: blur(10px);
+    }
+  }
+}
