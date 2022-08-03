@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gym/static/css/main.bc917e70.css",
+    "main.js": "/gym/static/js/main.090d77f7.js",
+    "static/js/787.5a6831c4.chunk.js": "/gym/static/js/787.5a6831c4.chunk.js",
+    "static/media/gym_video_intro.mp4": "/gym/static/media/gym_video_intro.8014bdd522e4d17bf986.mp4",
+    "static/media/craig-lovelidge-ndr4vtteVGw-unsplash.jpg": "/gym/static/media/craig-lovelidge-ndr4vtteVGw-unsplash.cce0bed4fdb5f037664a.jpg",
+    "static/media/aikomo-opeyemi-jYYP0Y4tYHo-unsplash.jpg": "/gym/static/media/aikomo-opeyemi-jYYP0Y4tYHo-unsplash.962444a692561180bc55.jpg",
+    "static/media/victor-freitas-hOuJYX2K5DA-unsplash.jpg": "/gym/static/media/victor-freitas-hOuJYX2K5DA-unsplash.f0700026f961f449ea46.jpg",
+    "static/media/nathan-dumlao-NXMZxygMw8o-unsplash (1).jpg": "/gym/static/media/nathan-dumlao-NXMZxygMw8o-unsplash (1).dc2ca84ce363affadff0.jpg",
+    "static/media/subhaan-saleem-Jf7hr7ZQzg8-unsplash.jpg": "/gym/static/media/subhaan-saleem-Jf7hr7ZQzg8-unsplash.cf73fa1b8c35c75f6b23.jpg",
+    "static/media/abdalla-m-y1TF3eH-S6M-unsplash.jpg": "/gym/static/media/abdalla-m-y1TF3eH-S6M-unsplash.5e253c98067e424621f7.jpg",
+    "static/media/PT-image-via-OriGym.jpg": "/gym/static/media/PT-image-via-OriGym.53e4ea9ea98df39dc766.jpg",
+    "service-worker.js": "/gym/service-worker.js",
+    "static/media/undraw_page_not_found.svg": "/gym/static/media/undraw_page_not_found.bdf1c60c297dc6528f56fe6a382dacdf.svg",
+    "index.html": "/gym/index.html",
+    "main.bc917e70.css.map": "/gym/static/css/main.bc917e70.css.map",
+    "main.090d77f7.js.map": "/gym/static/js/main.090d77f7.js.map",
+    "787.5a6831c4.chunk.js.map": "/gym/static/js/787.5a6831c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc917e70.css",
+    "static/js/main.090d77f7.js"
+  ]
+}
